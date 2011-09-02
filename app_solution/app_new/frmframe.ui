@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmframe</class>
+ <widget class="QWidget" name="frmframe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupPhysical">
+     <property name="title">
+      <string>Physical Frame</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Choose frame</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="cmbPrexistent"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="toolView">
+        <property name="toolTip">
+         <string>View Frame</string>
+        </property>
+        <property name="statusTip">
+         <string>View Frame</string>
+        </property>
+        <property name="whatsThis">
+         <string>Allows viewing this frame</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Create New</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QGroupBox" name="groupNew">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioCreate">
+           <property name="text">
+            <string>Create from Scratch</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>200</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="radioCopy">
+           <property name="text">
+            <string>Copy from pre-existent</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="cmbCopy"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QToolButton" name="toolEdit">
+        <property name="toolTip">
+         <string>Edit Frame</string>
+        </property>
+        <property name="statusTip">
+         <string>Edit Frame</string>
+        </property>
+        <property name="whatsThis">
+         <string>Allows editing this frame</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupTime">
+     <property name="title">
+      <string>Time Frame</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Start Date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>End Date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="CustomTimeCtrl" name="customDtStart">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="CustomTimeCtrl" name="customDtEnd">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBackNext">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushPrevious">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Previous</string>
+        </property>
+        <property name="icon">
+         <iconset resource="app_new.qrc">
+          <normaloff>:/app_new/back.png</normaloff>:/app_new/back.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushApply">
+        <property name="text">
+         <string>Apply</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushNext">
+        <property name="text">
+         <string>Next</string>
+        </property>
+        <property name="icon">
+         <iconset resource="app_new.qrc">
+          <normaloff>:/app_new/forward.png</normaloff>:/app_new/forward.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomTimeCtrl</class>
+   <extends>QWidget</extends>
+   <header>customtimectrl.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>cmbPrexistent</tabstop>
+  <tabstop>toolView</tabstop>
+  <tabstop>radioCreate</tabstop>
+  <tabstop>radioCopy</tabstop>
+  <tabstop>cmbCopy</tabstop>
+  <tabstop>toolEdit</tabstop>
+  <tabstop>pushPrevious</tabstop>
+ </tabstops>
+ <resources>
+  <include location="app_new.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>radioCreate</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>cmbCopy</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioCopy</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>cmbCopy</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushApply</sender>
+   <signal>clicked()</signal>
+   <receiver>frmframe</receiver>
+   <slot>apply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>574</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushNext</sender>
+   <signal>clicked()</signal>
+   <receiver>frmframe</receiver>
+   <slot>next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>693</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onChoosePreExistent()</slot>
+  <slot>onCreateNew()</slot>
+  <slot>next()</slot>
+  <slot>apply()</slot>
+ </slots>
+</ui>
